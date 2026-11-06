@@ -1,12 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
@@ -20,21 +21,118 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Welcome to My Portfolio</h2>
+    <main class="cv-layout">
 
-            <h3> Joud Abdullah Bawareth</h3>
+        <aside class="cv-sidebar">
+            <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=JoudGirl"
+                 alt="Cute girl avatar"
+                 class="profile-image">
 
-            <p>Student ID: 2331326</p>
+            <div class="side-links">
+                <a href="#about">About Me</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </div>
 
-            <p>
-                I am an Information Technology student at
-                King Abdulaziz University. Welcome to my
-                personal portfolio website, where you can
-                learn about my skills, education, and projects.
-            </p>
+            <div class="info-card" id="info">
+                <h2>Info</h2>
+                <p><strong>Name:</strong> Joud Abdullah Bawareth</p>
+                <p><strong>ID:</strong> 2331326</p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:gwareth@stu.kau.edu.sa">gwareth@stu.kau.edu.sa</a>
+                </p>
+                <p><strong>Location:</strong> Jeddah, Saudi Arabia</p>
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/joud15" target="_blank">joud15</a>
+                </p>
+            </div>
+        </aside>
+
+        <section class="cv-main-content">
+
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I am Joud Abdullah Bawareth, an Information Technology student
+                    at King Abdulaziz University. I am passionate about UI/UX design,
+                    web development, and data analysis. I enjoy building user-friendly
+                    interfaces and creating creative digital solutions that combine
+                    functionality with attractive design.
+                </p>
+
+                <p>
+                    I also have practical training experience in web development and
+                    database management, and I am always interested in improving my
+                    technical skills and gaining more professional experience.
+                </p>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Bachelor's Degree in Information Technology</strong> - King Abdulaziz University</li>
+                    <li><strong>Expected Graduation:</strong> June 2027</li>
+                    <li><strong>GPA:</strong> 4.98 / 5</li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>UI/UX Design (Figma)</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL / Databases</li>
+                    <li>Supabase</li>
+                    <li>Claude Code</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                </ul>
+
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Time Management</li>
+                    <li>Problem Solving</li>
+                    <li>Critical Thinking</li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h2>Achievements and Experience</h2>
+                <ul>
+                    <li>Completed practical training at <strong>Wow IT</strong>.</li>
+                    <li>Designed website pages using <strong>Claude Code</strong>.</li>
+                    <li>Built a database for a website using <strong>Supabase</strong>.</li>
+                    <li>Set up a demo version of a website.</li>
+                </ul>
+
+                <h2>Projects</h2>
+
+                <h3>HealthyChef</h3>
+                <p>
+                    Designed a health-focused recipe app that recommends meals
+                    based on user ingredients and dietary needs using Figma.
+                </p>
+
+                <h3>Orphan Project</h3>
+                <p>
+                    Designed a platform that connects orphanages with donors
+                    to improve transparency and support aid distribution.
+                </p>
+
+                <h3>3D Animation</h3>
+                <p>
+                    Created a short animation using Blender.
+                </p>
+            </section>
+
         </section>
+
     </main>
 
     <footer>
@@ -42,4 +140,5 @@
     </footer>
 
 </body>
+
 </html>
