@@ -396,3 +396,15 @@ input[type="radio"] + label {
         flex-wrap: wrap;
     }
 }
+
+
+/* Cute Portfolio Title */
+
+.site-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.title-bow {
+    font-size: 30px;
+}
