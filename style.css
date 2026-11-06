@@ -1,0 +1,180 @@
+
+/* General Page Style */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF7FB;
+    color: #43263B;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #981B6C;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+/* Navigation Bar */
+
+nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #C94B91;
+}
+
+/* Main Content */
+
+main {
+    width: 85%;
+    max-width: 950px;
+    margin: 30px auto;
+}
+
+/* Sections */
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #F4C6E1;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #981B6C;
+    border-bottom: 2px solid #FBE4F1;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: #B62B7F;
+}
+
+/* Paragraphs and Lists */
+
+p {
+    font-size: 16px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+
+main a {
+    color: #981B6C;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #C02680;
+    text-decoration: underline;
+}
+
+/* Labs Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background-color: #981B6C;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    background-color: #FBE4F1;
+}
+
+tr:hover td {
+    background-color: #F5C5E0;
+}
+
+/* Contact Form */
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #E7AACD;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #C02680;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+}
+
+button,
+input[type="submit"] {
+    background-color: #981B6C;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #C02680;
+}
+
+/* Footer */
+
+footer {
+    background-color: #981B6C;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
