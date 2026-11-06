@@ -216,3 +216,183 @@ input[type="radio"] + label {
     }
 }
 
+/* ===== CV PAGE NEW LAYOUT ===== */
+
+body {
+    background-color: #fff8fc;
+    background-image: radial-gradient(#f3d4e7 0.8px, transparent 0.8px);
+    background-size: 18px 18px;
+}
+
+header {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cv-layout {
+    width: 88%;
+    max-width: 1250px;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.cv-sidebar {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 25px 20px;
+    box-shadow: 0 8px 25px rgba(152, 27, 108, 0.12);
+    text-align: center;
+    position: sticky;
+    top: 20px;
+}
+
+.profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid #f4b6d7;
+    background-color: #ffe8f4;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.side-links {
+    margin-bottom: 25px;
+}
+
+.side-links a {
+    display: block;
+    background-color: #fbe4f1;
+    color: #981b6c;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.side-links a:hover {
+    background-color: #dc559d;
+    color: white;
+}
+
+.info-card {
+    border-top: 2px dashed #f0bdd9;
+    padding-top: 18px;
+    text-align: left;
+}
+
+.info-card h2 {
+    text-align: center;
+    color: #981b6c;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    margin: 10px 0;
+    font-size: 15px;
+    word-break: break-word;
+}
+
+.cv-main-content section {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 28px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(152, 27, 108, 0.10);
+    border: 1px solid #f5d3e6;
+}
+
+.cv-main-content h2 {
+    color: #981b6c;
+    font-size: 22px;
+    margin-top: 0;
+    border-bottom: 2px dashed #f1c5de;
+    padding-bottom: 10px;
+}
+
+.cv-main-content h3 {
+    color: #b62b7f;
+    margin-bottom: 8px;
+}
+
+.cv-main-content p,
+.cv-main-content li {
+    font-size: 17px;
+    color: #43263b;
+}
+
+.cv-main-content ul {
+    padding-left: 22px;
+}
+
+.cv-main-content li {
+    margin-bottom: 10px;
+}
+
+.info-card a,
+.cv-main-content a {
+    color: #b62b7f;
+    text-decoration: none;
+}
+
+.info-card a:hover,
+.cv-main-content a:hover {
+    text-decoration: underline;
+}
+
+/* ===== CONTACT RADIO FIX ===== */
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+input[type="radio"] + label {
+    display: inline;
+    margin-right: 18px;
+    font-weight: normal;
+}
+
+/* ===== CONTACT PAGE LAYOUT ===== */
+
+.contact-page {
+    width: 88%;
+    max-width: 1200px;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.contact-page section:first-child {
+    grid-column: 1 / -1;
+}
+
+.contact-page section {
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(152, 27, 108, 0.10);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+    .cv-layout,
+    .contact-page {
+        grid-template-columns: 1fr;
+    }
+
+    .cv-sidebar {
+        position: static;
+    }
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
