@@ -178,3 +178,41 @@ footer {
     padding: 15px;
     margin-top: 30px;
 }
+
+
+/* Contact Page Layout */
+
+.contact-page {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 25px;
+}
+
+.contact-page section {
+    margin-bottom: 0;
+}
+
+.contact-page section:first-child {
+    grid-column: 1 / -1;
+}
+
+/* Radio Buttons */
+
+input[type="radio"] + label {
+    display: inline;
+    margin: 0 20px 0 5px;
+    font-weight: normal;
+}
+
+/* Mobile Layout */
+
+@media (max-width: 700px) {
+    .contact-page {
+        display: block;
+    }
+
+    .contact-page section {
+        margin-bottom: 20px;
+    }
+}
+
