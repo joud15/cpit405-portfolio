@@ -1,6 +1,3 @@
-
-
-
 * {
     box-sizing: border-box;
 }
@@ -838,4 +835,22 @@ button[type="submit"]:hover {
 
 .title-bow {
     font-size: 30px;
+}
+
+
+/* Course Project Table */
+
+.project-table {
+    min-width: 0;
+}
+
+.project-table th,
+.project-table td {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.project-table .lab-button {
+    padding-left: 8px;
+    padding-right: 8px;
 }
