@@ -1,18 +1,5 @@
 
-/* Pink & Fuchsia Theme */
 
-:root {
-    --fuchsia: #981B6C;
-    --pink: #D94D9D;
-    --soft-pink: #FBE4F1;
-    --pale-pink: #FFF7FB;
-    --ink: #492B42;
-    --border: #F1C8DF;
-    --card-shadow: 0 12px 30px rgba(152, 27, 108, 0.14),
-                   0 3px 9px rgba(152, 27, 108, 0.06);
-    --card-shadow-hover: 0 20px 46px rgba(152, 27, 108, 0.22),
-                         0 5px 16px rgba(152, 27, 108, 0.10);
-}
 
 * {
     box-sizing: border-box;
@@ -27,12 +14,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.7;
-    background-color: var(--pale-pink);
+    background-color: #FFF7FB;
     background-image: radial-gradient(
         #f5d6e7 0.8px, transparent 0.8px
     );
     background-size: 19px 19px;
-    color: var(--ink);
+    color: #492B42;
 }
 
 /* Header */
@@ -40,7 +27,10 @@ body {
 .site-header {
     position: relative;
     overflow: hidden;
-    padding: 64px 20px 29px;
+    padding-top: 64px;
+    padding-right: 20px;
+    padding-bottom: 29px;
+    padding-left: 20px;
     text-align: center;
     color: white;
     background: linear-gradient(
@@ -82,7 +72,10 @@ body {
 }
 
 .header-subtitle {
-    margin: 12px 0 0;
+    margin-top: 12px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     font-size: 14px;
     color: #FFE3F3;
 }
@@ -98,8 +91,14 @@ body {
     gap: 18px;
     width: fit-content;
     max-width: 100%;
-    margin: 29px auto 0;
-    padding: 9px 22px;
+    margin-top: 29px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-top: 9px;
+    padding-right: 22px;
+    padding-bottom: 9px;
+    padding-left: 22px;
     border: 1px solid rgba(255, 255, 255, 0.55);
     border-radius: 50px;
     background: rgba(255, 255, 255, 0.16);
@@ -112,7 +111,10 @@ body {
     position: relative;
     display: inline-block;
     min-width: 105px;
-    padding: 10px 17px;
+    padding-top: 10px;
+    padding-right: 17px;
+    padding-bottom: 10px;
+    padding-left: 17px;
     border-radius: 30px;
     color: white;
     font-weight: bold;
@@ -124,15 +126,15 @@ body {
 }
 
 .site-nav a:hover,
-.site-nav a:focus-visible {
+.site-nav a:focus {
     background-color: rgba(255, 255, 255, 0.30);
     box-shadow: 0 5px 13px rgba(65, 8, 45, 0.16);
     transform: translateY(-3px);
 }
 
 .site-nav a.active {
-    background: #FFF1F8;
-    color: var(--fuchsia);
+    background-color: #FFF1F8;
+    color: #981B6C;
     box-shadow: 0 4px 12px rgba(65, 8, 45, 0.16);
 }
 
@@ -165,10 +167,10 @@ body {
 .project-card,
 .info-card,
 .table-shell {
-    background: white;
-    border: 1px solid var(--border);
+    background-color: white;
+    border: 1px solid #F1C8DF;
     border-radius: 19px;
-    box-shadow: var(--card-shadow);
+    box-shadow: 0 12px 30px rgba(152, 27, 108, 0.14), 0 3px 9px rgba(152, 27, 108, 0.06);
     transition: box-shadow 0.3s ease,
                 transform 0.3s ease;
 }
@@ -178,17 +180,20 @@ body {
 .project-card:hover,
 .info-card:hover,
 .table-shell:hover {
-    box-shadow: var(--card-shadow-hover);
+    box-shadow: 0 20px 46px rgba(152, 27, 108, 0.22), 0 5px 16px rgba(152, 27, 108, 0.10);
     transform: translateY(-3px);
 }
 
 .panel {
-    padding: 28px 31px;
+    padding-top: 28px;
+    padding-right: 31px;
+    padding-bottom: 28px;
+    padding-left: 31px;
     margin-bottom: 25px;
 }
 
 h2 {
-    color: var(--fuchsia);
+    color: #981B6C;
     font-size: 23px;
     line-height: 1.35;
 }
@@ -206,7 +211,7 @@ li {
 }
 
 main a {
-    color: var(--fuchsia);
+    color: #981B6C;
     text-decoration: none;
 }
 
@@ -227,7 +232,10 @@ main a:hover {
 .cv-layout {
     width: 90%;
     max-width: 1190px;
-    margin: 38px auto 50px;
+    margin-top: 38px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
     display: grid;
     grid-template-columns: 285px minmax(0, 1fr);
     gap: 29px;
@@ -235,7 +243,10 @@ main a:hover {
 }
 
 .cv-sidebar {
-    padding: 28px 20px;
+    padding-top: 28px;
+    padding-right: 20px;
+    padding-bottom: 28px;
+    padding-left: 20px;
     text-align: center;
     position: sticky;
     top: 18px;
@@ -246,7 +257,10 @@ main a:hover {
 .avatar-wrap {
     width: 170px;
     height: 170px;
-    margin: 0 auto 13px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 13px;
+    margin-left: auto;
     padding: 7px;
     border-radius: 50%;
     background-color: #F8E0EE;
@@ -277,7 +291,10 @@ main a:hover {
 .sidebar-subtitle {
     color: #8B6280;
     font-size: 13px;
-    margin: 4px 0 22px;
+    margin-top: 4px;
+    margin-right: 0;
+    margin-bottom: 22px;
+    margin-left: 0;
 }
 
 /* Sidebar Links */
@@ -289,7 +306,10 @@ main a:hover {
 
 .side-links a {
     display: block;
-    padding: 11px 8px;
+    padding-top: 11px;
+    padding-right: 8px;
+    padding-bottom: 11px;
+    padding-left: 8px;
     border-radius: 12px;
     background-color: #FBE3F0;
     font-weight: bold;
@@ -300,7 +320,7 @@ main a:hover {
 }
 
 .side-links a:hover,
-.side-links a:focus-visible {
+.side-links a:focus {
     background-color: #D94D9D;
     color: white;
     transform: translateX(4px);
@@ -317,14 +337,20 @@ main a:hover {
 }
 
 .info-card h3 {
-    margin: 0 0 10px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
     text-align: center;
 }
 
 .info-card p {
     font-size: 13px;
     overflow-wrap: anywhere;
-    margin: 7px 0;
+    margin-top: 7px;
+    margin-right: 0;
+    margin-bottom: 7px;
+    margin-left: 0;
 }
 
 /* CV Sections */
@@ -334,7 +360,10 @@ main a:hover {
 }
 
 .cv-main-content h2 {
-    margin: 8px 0 17px;
+    margin-top: 8px;
+    margin-right: 0;
+    margin-bottom: 17px;
+    margin-left: 0;
     border-bottom: 2px dashed #F3C5DD;
     padding-bottom: 11px;
 }
@@ -356,9 +385,12 @@ main a:hover {
 
 .fact-chip {
     display: inline-block;
-    padding: 9px 13px;
+    padding-top: 9px;
+    padding-right: 13px;
+    padding-bottom: 9px;
+    padding-left: 13px;
     border-radius: 12px;
-    background: #FCE9F3;
+    background-color: #FCE9F3;
     color: #803061;
     font-weight: bold;
     font-size: 13px;
@@ -374,8 +406,11 @@ main a:hover {
 
 .skill-list span {
     display: inline-block;
-    padding: 7px 13px;
-    background: #FCE7F3;
+    padding-top: 7px;
+    padding-right: 13px;
+    padding-bottom: 7px;
+    padding-left: 13px;
+    background-color: #FCE7F3;
     color: #8D1D66;
     border-radius: 18px;
     font-size: 14px;
@@ -383,7 +418,7 @@ main a:hover {
 }
 
 .soft-skills span {
-    background: #F8F0F5;
+    background-color: #F8F0F5;
 }
 
 .subsection-heading {
@@ -399,8 +434,11 @@ main a:hover {
 }
 
 .project-card {
-    padding: 17px 18px;
-    background: #FFFAFD;
+    padding-top: 17px;
+    padding-right: 18px;
+    padding-bottom: 17px;
+    padding-left: 18px;
+    background-color: #FFFAFD;
 }
 
 .project-card:last-child {
@@ -421,7 +459,10 @@ main a:hover {
 .inner-page {
     width: 88%;
     max-width: 1050px;
-    margin: 40px auto 55px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 55px;
+    margin-left: auto;
 }
 
 .page-intro {
@@ -429,7 +470,10 @@ main a:hover {
 }
 
 .page-intro h2 {
-    margin: 5px 0 12px;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 12px;
+    margin-left: 0;
     font-size: 30px;
 }
 
@@ -454,9 +498,12 @@ table {
 }
 
 th {
-    background-color: var(--fuchsia);
+    background-color: #981B6C;
     color: white;
-    padding: 15px 20px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
 }
 
 th:first-child {
@@ -468,9 +515,12 @@ th:last-child {
 }
 
 td {
-    padding: 16px 20px;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
     border-bottom: 1px solid #F1C8DF;
-    background: #FFF9FC;
+    background-color: #FFF9FC;
 }
 
 tr:last-child td {
@@ -478,18 +528,21 @@ tr:last-child td {
 }
 
 tbody tr:nth-child(even) td {
-    background: #FCE9F3;
+    background-color: #FCE9F3;
 }
 
 tbody tr:hover td {
-    background: #F6D4E8;
+    background-color: #F6D4E8;
 }
 
 .lab-button {
     display: inline-block;
-    padding: 8px 15px;
+    padding-top: 8px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    padding-left: 15px;
     border-radius: 11px;
-    background: var(--fuchsia);
+    background-color: #981B6C;
     color: white !important;
     font-weight: bold;
     font-size: 13px;
@@ -499,7 +552,7 @@ tbody tr:hover td {
 }
 
 .lab-button:hover {
-    background: #C53D8B;
+    background-color: #C53D8B;
     transform: translateY(-2px);
     box-shadow: 0 5px 13px rgba(152, 27, 108, 0.25);
     text-decoration: none;
@@ -515,7 +568,10 @@ tbody tr:hover td {
 .contact-page {
     width: 88%;
     max-width: 1100px;
-    margin: 40px auto 55px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 55px;
+    margin-left: auto;
     display: grid;
     grid-template-columns: minmax(250px, 0.85fr)
                            minmax(0, 1.4fr);
@@ -559,7 +615,10 @@ form {
 
 form > label {
     display: block;
-    margin: 16px 0 5px;
+    margin-top: 16px;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-left: 0;
     font-weight: bold;
 }
 
@@ -567,12 +626,15 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 13px 15px;
+    padding-top: 13px;
+    padding-right: 15px;
+    padding-bottom: 13px;
+    padding-left: 15px;
     border: 1px solid #E7AACD;
     border-radius: 10px;
     background-color: #FFFAFD;
     font-family: Arial, sans-serif;
-    color: var(--ink);
+    color: #492B42;
     font-size: 15px;
     transition: border-color 0.2s,
                 box-shadow 0.2s;
@@ -593,7 +655,10 @@ textarea {
 /* Radio Buttons */
 
 .message-type {
-    margin: 19px 0 0;
+    margin-top: 19px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     padding: 0;
     border: none;
 }
@@ -619,7 +684,7 @@ textarea {
 }
 
 input[type="radio"] {
-    accent-color: var(--fuchsia);
+    accent-color: #981B6C;
 }
 
 /* Submit Button */
@@ -627,11 +692,16 @@ input[type="radio"] {
 button[type="submit"] {
     border: 0;
     border-radius: 12px;
-    padding: 13px 26px;
+    padding-top: 13px;
+    padding-right: 26px;
+    padding-bottom: 13px;
+    padding-left: 26px;
     margin-top: 22px;
-    background-color: var(--fuchsia);
+    background-color: #981B6C;
     color: white;
-    font: bold 15px Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
     cursor: pointer;
     box-shadow: 0 6px 16px rgba(152, 27, 108, 0.23);
     transition: background-color 0.25s,
@@ -649,14 +719,20 @@ button[type="submit"]:hover {
 
 .site-footer {
     margin-top: 30px;
-    padding: 22px 15px;
-    background-color: var(--fuchsia);
+    padding-top: 22px;
+    padding-right: 15px;
+    padding-bottom: 22px;
+    padding-left: 15px;
+    background-color: #981B6C;
     color: white;
     text-align: center;
 }
 
 .site-footer p {
-    margin: 2px 0;
+    margin-top: 2px;
+    margin-right: 0;
+    margin-bottom: 2px;
+    margin-left: 0;
     font-size: 13px;
 }
 
@@ -682,7 +758,10 @@ button[type="submit"]:hover {
 
 @media (max-width: 600px) {
     .site-header {
-        padding: 45px 12px 22px;
+        padding-top: 45px;
+        padding-right: 12px;
+        padding-bottom: 22px;
+        padding-left: 12px;
     }
 
     .site-title {
@@ -691,13 +770,19 @@ button[type="submit"]:hover {
 
     .site-nav {
         gap: 5px;
-        padding: 7px 10px;
+        padding-top: 7px;
+        padding-right: 10px;
+        padding-bottom: 7px;
+        padding-left: 10px;
         margin-top: 24px;
     }
 
     .site-nav a {
         min-width: 0;
-        padding: 8px 10px;
+        padding-top: 8px;
+        padding-right: 10px;
+        padding-bottom: 8px;
+        padding-left: 10px;
         font-size: 13px;
     }
 
@@ -709,7 +794,10 @@ button[type="submit"]:hover {
     }
 
     .panel {
-        padding: 20px 18px;
+        padding-top: 20px;
+        padding-right: 18px;
+        padding-bottom: 20px;
+        padding-left: 18px;
     }
 
     .project-grid {
@@ -741,6 +829,11 @@ button[type="submit"]:hover {
         transition: none !important;
     }
 }
+
+.title-bow {
+    font-size: 30px;
+}
+
 
 
 .title-bow {
